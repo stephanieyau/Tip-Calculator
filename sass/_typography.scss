@@ -1,0 +1,34 @@
+body {
+  font-family: "Space Mono";
+}
+
+h1 {
+  font-size: 2rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  color: $very-dark-cyan;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+h2 {
+  color: $dark-grayish-cyan;
+  padding-bottom: 1rem;
+}
+
+.h2__white {
+  color: $white;
+}
+
+.h2__warning-text {
+  color: $orange;
+  margin-left: auto;
+}
+
+p {
+  color: $dark-grayish-cyan-2;
+}
+
+.hidden {
+  display: none;
+}

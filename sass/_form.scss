@@ -1,0 +1,33 @@
+.form {
+  position: relative;
+
+  &__input {
+    font-size: 2rem;
+    font-family: inherit;
+    font-weight: 700;
+    text-align: right;
+    background-color: $light-grayish-cyan-2;
+    border: 2px solid $light-grayish-cyan-2;
+    border-radius: $button-border-radius;
+    padding: 0.7rem;
+    width: 100%;
+    height: $standard-button-height;
+
+    &:focus {
+      outline: none;
+      border: 2px solid $bright-cyan;
+      color: $very-dark-cyan;
+    }
+  }
+
+  &__icon {
+    height: 2rem;
+    left: 1.5rem;
+    top: 1.5rem;
+    position: absolute;
+  }
+}
+
+.form-hidden {
+  border: 2px solid $orange;
+}

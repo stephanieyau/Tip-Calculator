@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; //At the default viewport width, 1rem = 16px. We set it to 62.5% to make 1rem = 10px. Now, in all other scss files, 1rem will be 10px
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100%;
+  background-color: plum;
+}
+
+.master {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

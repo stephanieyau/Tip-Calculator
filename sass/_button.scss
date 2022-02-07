@@ -1,0 +1,61 @@
+.btn {
+  font-size: 2.5rem;
+  border-radius: $button-border-radius;
+  height: $standard-button-height;
+  font-family: inherit;
+  font-weight: 700;
+
+  &__tip-item {
+    border: 1px solid $very-dark-cyan;
+    background-color: $very-dark-cyan;
+    color: white;
+
+    &:hover {
+      border: 1px solid $light-cyan;
+      background-color: $light-cyan;
+      color: $very-dark-cyan;
+      cursor: pointer;
+    }
+
+    &:focus,
+    &:active {
+      border: 1px solid $bright-cyan;
+      background-color: $bright-cyan;
+      color: $very-dark-cyan;
+    }
+  }
+
+  &__large {
+    text-transform: uppercase;
+    border: 1px solid $light-cyan;
+    background-color: $light-cyan;
+    color: $very-dark-cyan;
+    width: 100%;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:active {
+      border: 1px solid $bright-cyan;
+      background-color: $bright-cyan;
+      color: $very-dark-cyan;
+    }
+
+    &:focus {
+      border: 1px solid $bright-cyan;
+      background-color: $bright-cyan;
+      color: $very-dark-cyan;
+    }
+  }
+
+  &__reset {
+    margin-top: $standard-margin;
+  }
+}
+
+.btn__tip-item-selected {
+  border: 1px solid $bright-cyan;
+  background-color: $bright-cyan;
+  color: $very-dark-cyan;
+}

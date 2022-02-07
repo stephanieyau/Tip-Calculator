@@ -1,0 +1,56 @@
+.calculator {
+  display: flex;
+  background-color: $white;
+  padding: $standard-padding;
+  width: 90rem;
+  border-radius: $standard-border-radius;
+
+  &__left {
+    width: 50%;
+    margin-right: $standard-margin;
+  }
+
+  &__right {
+    background-color: $very-dark-cyan;
+    width: 50%;
+    padding: $standard-padding;
+    border-radius: $standard-border-radius;
+  }
+
+  &__select_tip_container {
+    margin-top: $standard-margin;
+    margin-bottom: $standard-margin;
+  }
+
+  &__select_tip {
+    display: grid;
+    grid-template-rows: $standard-button-height $standard-button-height;
+    grid-template-columns: 30% 30% 30%;
+    grid-row-gap: 2rem;
+    grid-column-gap: (100% - 30% * 3) / 2;
+  }
+
+  &__group-heading {
+    display: flex;
+  }
+
+  &__results {
+    display: flex;
+    margin-bottom: $standard-margin;
+
+    &-text {
+      flex-grow: 10;
+    }
+
+    &-figure {
+      align-self: center;
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: $bright-cyan;
+    }
+  }
+
+  &__btn-group {
+    margin-top: 5rem;
+  }
+}

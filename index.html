@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="sass/main.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="master">
+        <h1>spli<br />tter</h1>
+        <div class="calculator">
+          <div class="calculator__left">
+            <div class="calculator__group-heading">
+              <h2>Bill</h2>
+              <h2 class="h2__warning-text warning-1 hidden">Can't be blank</h2>
+            </div>
+            <form name="form__bill" action="#" class="form">
+              <img class="form__icon" src="images/icon-dollar.svg" />
+              <input
+                type="number"
+                class="form__input"
+                id="bill__input"
+                min="0"
+                placeholder="Enter your bill here!"
+                required
+              />
+            </form>
+
+            <div class="calculator__select_tip_container">
+              <div class="calculator__group-heading">
+                <h2>Select Tip</h2>
+                <h2 class="h2__warning-text warning-2 hidden">
+                  Please select a tip
+                </h2>
+              </div>
+              <div class="calculator__select_tip">
+                <button class="btn btn__tip-item" data-btn="0.05">
+                  5<span>&#37;</span>
+                </button>
+                <button class="btn btn__tip-item" data-btn="0.10">
+                  10<span>&#37;</span>
+                </button>
+                <button class="btn btn__tip-item" data-btn="0.15">
+                  15<span>&#37;</span>
+                </button>
+                <button class="btn btn__tip-item" data-btn="0.25">
+                  25<span>&#37;</span>
+                </button>
+                <button class="btn btn__tip-item" data-btn="0.50">
+                  50<span>&#37;</span>
+                </button>
+                <form action="#" class="form">
+                  <input
+                    type="number"
+                    class="form__input"
+                    id="custom__input"
+                    min="0"
+                    placeholder="Custom"
+                  />
+                </form>
+              </div>
+            </div>
+
+            <div class="calculator__group-heading">
+              <h2>Number of People</h2>
+              <h2 class="h2__warning-text warning-3 hidden">Can't be zero</h2>
+            </div>
+            <form action="#" class="form">
+              <img class="form__icon" src="images/icon-person.svg" />
+              <input
+                type="number"
+                class="form__input"
+                id="people__input"
+                min="0"
+                placeholder="How many people?"
+                required
+              />
+            </form>
+          </div>
+
+          <div class="calculator__right">
+            <div class="calculator__results">
+              <div class="calculator__results-text">
+                <h2 class="h2__white">Tip Amount</h2>
+                <p>/ person</p>
+              </div>
+              <div class="calculator__results-figure">
+                <span>&#36;</span>
+                <span id="result__tip">0.00 </span>
+              </div>
+            </div>
+
+            <div class="calculator__results calculator__results-total">
+              <div class="calculator__results-text">
+                <h2 class="h2__white">Total</h2>
+                <p>/ person</p>
+              </div>
+              <div class="calculator__results-figure">
+                <span>&#36;</span>
+                <span id="result__total">0.00</span>
+              </div>
+            </div>
+
+            <div class="calculator__btn-group">
+              <button class="btn btn__large btn__calculate">calculate</button>
+              <button class="btn btn__large btn__reset">reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Stephanie Qiu</a>.
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
