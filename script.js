@@ -54,13 +54,13 @@ const init = function () {
   resultTip.textContent = "0.00";
   resultTotal.textContent = "0.00";
 
-  removeAllWarnings();
-
   tipAmount = undefined;
   customAmount = "";
   peopleAmount = "";
   resultsTipAmount = "";
   resultsTotalAmount = "";
+
+  removeAllWarnings();
 };
 
 init();
@@ -83,30 +83,24 @@ btnCalculate.addEventListener("click", function () {
   customAmount = Number(customInput.value);
   peopleAmount = Number(peopleInput.value);
 
-  // If at least one field is missing, display warning
+  // If bill value missing, display warning
   if (billInput.value.length == 0) {
     warning1.classList.remove("hidden");
     billInput.classList.add("form-hidden");
-  } else {
-    warning1.classList.add("hidden");
-    billInput.classList.remove("form-hidden");
   }
 
+  // If tip amount missing, display warning
   if (tipAmount == undefined && customInput.value.length == 0) {
     warning2.classList.remove("hidden");
-  } else {
-    warning2.classList.add("hidden");
   }
 
+  // If people value missing, display warning
   if (peopleInput.value.length == 0) {
     warning3.classList.remove("hidden");
     peopleInput.classList.add("form-hidden");
-  } else {
-    warning3.classList.add("hidden");
-    peopleInput.classList.remove("form-hidden");
   }
 
-  // If >= 1 field missing, return
+  // If >= 1 field(s) missing, return
   if (
     billInput.value.length == 0 ||
     peopleInput.value.length == 0 ||
